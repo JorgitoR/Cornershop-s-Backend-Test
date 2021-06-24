@@ -1,0 +1,97 @@
+{% extends 'base.html' %}
+
+{% block contenido %}
+
+<div class="row">
+	{% if titulo %}
+
+
+	<div class="card" style="margin: auto;">
+		<div class="card-header">
+			<h3>{{titulo}}</h3>
+		</div>
+
+		<div>
+		{% for pedido in instance %}
+			<p style="text-align: center;">
+				Id del menu: {{pedido.menu.id}}
+			</p>
+
+			<div style="width:85%; margin: auto; ">
+			<small>Tu eleción fue la siguiente.</small>
+			<p>
+				<strong>Menú:</strong> {{pedido.opcion.item}}
+			</p>
+			<p>
+				<strong>Especificación:</strong> {{pedido.personalizar}}
+			</p>
+			</div>
+			
+			
+		{% endfor %}
+		</div>
+	</div>
+
+
+	
+
+	{% else %}
+	<div class="col-lg-6">
+		<p>
+			Hello!
+		</p>
+		<p>
+			I share with you today's menu :)
+		</p>
+
+		<div>
+			{% for opcion in opciones %}
+				<p>
+					Opción <span class="opcion">{{forloop.counter}} </span>{{opcion.item}}
+				</p>
+			{% endfor %}
+		</div>
+	</div>
+
+	
+
+	{% if menu.elegir_menu != True %}
+		<h5>No se permite elegir un menú después de las 11 AM CLT.</h5>
+	{% else %}
+		<div class="col-lg-6">
+			<form method="POST">
+				{%  csrf_token %}
+
+				Selecionar opción
+            	<select id="opcion" class="form-control" name="opcion">
+				{% for opcion in opciones %}
+             	<option value="{{ opcion.pk }}">{{ opcion }}</option>
+				{% endfor %}
+           	 	</select>
+
+           	 	Personaliza tu opción
+           	 	<input type="text" class="form-control" name="personalizar">
+
+				<button type="submit" class="btn btn-primary">
+					Guardar
+				</button>
+			</form>
+		</div>
+	{% endif %}
+
+	{% endif %}
+
+</div>
+
+<style>
+	.opcion{
+		    background: #00bcd4;
+    		color: #fff;
+    		padding: 5px;
+    		border-radius: 50px;
+    		text-align: center;
+    		vertical-align: middle;
+	}
+</style>
+
+{% endblock %}

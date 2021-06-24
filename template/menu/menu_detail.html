@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+
+{% block contenido %}
+	
+	<p><strong>Id del menu:</strong> {{object.id}}</p>
+
+	<div class="col-lg-6">
+	{% for opciones in object.opciones.all %}
+		<p>
+			Opción <span class="opcion">{{forloop.counter}}:</span> {{opciones.item}}
+		</p>
+	{% endfor %}
+	</div>
+
+	<div>
+	{% for empleado in object.employer.all %}
+		<div class="div_empleado_item">
+			<p>
+				<strong>Empleado:</strong> {{empleado.empleado}}
+			</p>
+			<p>
+				Opción <span class="opcion">{{empleado.opcion}}:</span>
+			</p>
+			
+			{% if empleado.personalizar %}
+			<p>
+				<strong>Personalizar:</strong> {{empleado.personalizar}}
+			</p>
+			{% else %}
+			{% endif %}
+		</div>
+	{% endfor %}
+	</div>
+
+<style>
+	.opcion{
+		    background: #00bcd4;
+    		color: #fff;
+    		padding: 5px;
+    		border-radius: 50px;
+    		text-align: center;
+    		vertical-align: middle;
+	}
+
+	.div_empleado_item{
+		background: #fafafa;
+		padding: 10px;
+		margin: 5px 0;
+	}
+
+</style>
+{% endblock %}

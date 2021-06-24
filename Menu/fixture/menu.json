@@ -1,0 +1,62 @@
+[
+
+  {
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$36000$1KkkaM9SgYlu$kIql/3vMcWGUgIDRl4O9O4I3aO+FWmKRlaKGDkAJtMQ=",
+    "last_login": "2017-07-21T18:41:23.300Z",
+    "is_superuser": true,
+    "username": "cornershop",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2017-07-20T00:57:08.348Z",
+    "groups": [],
+    "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+      "password": "pbkdf2_sha256$36000$Nsq10lJ2s1ok$cazLo9Uh4rEZMijsR8lY9tP4uJ5uIKxoRh91uAdP7Qg=",
+      "last_login": "2017-07-21T06:25:30.036Z",
+      "is_superuser": false,
+      "username": "nora",
+      "first_name": "Nora",
+      "last_name": "",
+      "email": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2017-07-20T01:02:03Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+
+
+
+{
+  "model": "Menu.Menu",
+  "pk": 1,
+  "fields": {
+    "usuario": 2,
+    "enviar": false,
+    "creado": "2021-06-23 11:55:00",
+    "actualizado": "2021-06-23 11:55:00"
+  }
+},
+{
+  "model": "Menu.Menu",
+  "pk": 2,
+  "fields": {
+    "usuario": 2,
+    "enviar": true,
+    "creado": "2021-06-23 11:55:00",
+    "actualizado": "2021-06-23 11:55:00"
+  }
+}
+]

@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+
+{% load crispy_forms_tags  crispy_forms_filters %}
+
+{% block contenido %}
+
+<nav arial-label="breadcrumb">
+	<ol class="breadcrumb">
+		<li class="breadcrumb-item active">
+			<a href="{% url 'menu' %}">
+				Mis Menú
+			</a>
+		</li>
+		<li class="breadcrumb-item active">
+			{{menu.creado}}
+		</li>
+	</ol>
+</nav>
+
+<div class="row mb-3">
+	<div class="col-md-6 col-sm-8 col-12">
+		<form method="post">
+			{% csrf_token %}
+			{{form|crispy}}
+			<button type="submit" class="btn btn-succes">
+				Guardar Cambios
+			</button>
+		</form>
+	</div>
+</div>
+
+
+<div class="card">
+	<div class="card-header">
+		<div class="row">
+			<div class="col-10">
+				<strong>
+					Opciones del Menu
+				</strong>
+			</div>
+
+		</div>
+	</div>
+
+<div class="list-group list-group-flush list-group-formset">
+	{% for opcion in  opciones %}
+
+		<div class="list-group-item">
+			<div class="row">
+				<div class="col-20">
+					<a href="">
+						{{opcion.item}}
+					</a>
+				</div>
+		
+			</div>
+		</div>
+
+	{% empty %}
+	<div class="list-group-item text-center">
+		<p class="text-muted font-italic mb-0">
+			No has añadido opción al menu. Vamos adelante <a href="{% url 'crear_opciones' menu.id %}">
+				Añadir la primera opcion
+			</a>
+		</p>
+	</div>
+	{% endfor %}
+</div>
+<div class="card-footer">
+	<a href="{% url 'crear_opciones' menu.id %}">
+		Añadir Opciones
+	</a>
+</div>
+
+</div>
+
+{% endblock %}

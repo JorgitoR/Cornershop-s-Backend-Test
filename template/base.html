@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>CornerShop Test</title>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="{% url 'menu' %}">CornerShop</a>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+    <div class="col-lg-6">
+    <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+
+        {% if user.is_authenticated %}
+            <li class="nav-item">
+                <a class="nav-link">Bienvenido : {{ request.user|capfirst }}</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'logout' %}">Cerrar sesión</a>
+            </li>
+        {% else %}
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'login' %}">Iniciar sesión</a>
+            </li>
+        {% endif %}
+
+    </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+<div class="container">
+    <br><br>
+    {% block contenido %}
+
+    {% endblock %}
+
+</div>
+
+</body>
+</html>

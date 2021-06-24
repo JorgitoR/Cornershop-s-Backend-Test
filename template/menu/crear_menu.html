@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+
+{% block contenido %}
+
+<div class="row">
+	<div class="col-lg-6">
+		<h3>Crear nuevo Menú</h3>
+
+		<div>
+			<form method="POST">
+				{% csrf_token %}
+				{{form.as_p}}
+			
+				<button type="submit" class="btn btn-primary">
+					Guardar
+				</button>
+				
+			</form>
+		</div>
+
+	</div>
+</div>
+
+<style>
+	p{
+		margin-bottom: 0!important;
+	}
+</style>
+
+{% endblock %}
