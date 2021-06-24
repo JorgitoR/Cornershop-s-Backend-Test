@@ -65,7 +65,7 @@ At this point if you want to interact with the page as an employee (Instead of N
 - username: jorgito
 - password: cornershop
 
-
+https://i.ibb.co/Kzj3YdZ/image-2.png
 
 
 
