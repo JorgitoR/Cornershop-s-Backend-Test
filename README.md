@@ -53,6 +53,8 @@ So at this point the developmet server has you redirected to an authentication p
 
 As you get it done so you will be in front of the main administrative page for nora just like the next image
 
+
+<img src="https://i.ibb.co/8Kk55v8/image-4-1.png">
 <img src="https://i.ibb.co/4Nxt6w9/image-1.png">
 <img src="https://i.ibb.co/9WGnthD/image-2-1.png">
 <img src="https://i.ibb.co/QYR61KQ/image-3-1.png">
