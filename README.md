@@ -30,3 +30,21 @@ Just The user with this tag <strong>Chef</strong> can create a menu, update the 
 This user whit this tag <strong>Employee</strong> is be able to choose his preferred meal (until 11 Am CLT) and customizations his order
 
 ----Img
+
+
+# Building instructions
+-Cloning the repository
+
+Start by cloning this repository to your computer by typing the next instruction in your command lines windor:
+git clone https://github.com/JorgitoR/Cornershop-s-Backend-Test.git
+
+-Setting up your Slack enviroment
+
+```
+TOKEN_SLACK = '<your token here>'
+```
+
+
+
+
+
