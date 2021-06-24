@@ -59,8 +59,8 @@ As you get it done so you will be in front of the main administrative page for n
 
 At this point if you want to interact with the page as an employee (Instead of Nora), so you can use the next common users (employee) to request today's menu or something by entering to the generated link in the Slack reminder:
 
-- username:
-- password
+- username: jorgito
+- password: cornershop
 
 
 
