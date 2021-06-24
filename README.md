@@ -9,4 +9,12 @@ Hi There, In this repository I will show you the implementation for the Conrener
 - There are two roles of user Chef and Employer
 - The employees are be able to choose their preferred meal (until 11 Am CLT)
 - The employer can customizations (e.g no tamatoes in the salad).
-- 
+
+# Specifications
+
+- Celery for async task setup
+- Slack to notify reminder form employer
+- Django to develop the web project
+
+
+# How work this project?
