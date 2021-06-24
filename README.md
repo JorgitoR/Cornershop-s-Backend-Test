@@ -23,10 +23,10 @@ I have two differents type of user "chef" and "employee" for this I implemented 
 The users have different roles, I implemented  <a href="https://github.com/JorgitoR/Cornershop-s-Backend-Test/blob/main/Menu/decorators.py">decorators</a> for this, eg the employee can't create a menu or see what request your coworkers
 
 # Chef
-Just The user with this tag <strong>Chef</stron> can create a menu, update the menu, update the options and see what the Cornershop employees have requested.
+Just The user with this tag <strong>Chef</strong> can create a menu, update the menu, update the options and see what the Cornershop employees have requested.
 ---Img
 
 # Employee
-This user whit this tag <strong>Employee</stron> is be able to choose his preferred meal (until 11 Am CLT) and customizations his order
+This user whit this tag <strong>Employee</strong> is be able to choose his preferred meal (until 11 Am CLT) and customizations his order
 
 ----Img
