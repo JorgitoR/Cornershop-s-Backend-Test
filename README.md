@@ -44,6 +44,17 @@ git clone https://github.com/JorgitoR/Cornershop-s-Backend-Test.git
 TOKEN_SLACK = '<your token here>'
 ```
 
+- Administration Credentiales
+
+So at this point the developmet server has you redirected to an authentication page. This is what Nora would actually see if she were the administrator. To login use the next superuser credentials:
+
+- username: nora
+- password: cornershop
+
+As you get it done so you will be in front of the main administrative page for nora just like the next image
+
+-----IMG
+
 
 
 
