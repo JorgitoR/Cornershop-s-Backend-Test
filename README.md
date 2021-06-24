@@ -33,12 +33,12 @@ This user whit this tag <strong>Employee</strong> is be able to choose his prefe
 
 
 # Building instructions
--Cloning the repository
+- Cloning the repository
 
 Start by cloning this repository to your computer by typing the next instruction in your command lines windor:
 git clone https://github.com/JorgitoR/Cornershop-s-Backend-Test.git
 
--Setting up your Slack enviroment
+- Setting up your Slack enviroment
 
 ```
 TOKEN_SLACK = '<your token here>'
