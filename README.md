@@ -38,7 +38,7 @@ This user whit this tag <strong>Employee</strong> is be able to choose his prefe
 Start by cloning this repository to your computer by typing the next instruction in your command lines windor:
 git clone https://github.com/JorgitoR/Cornershop-s-Backend-Test.git
 
-- Setting up your Slack enviroment
+- Setting up your Slack enviroment in your file settings.py
 
 ```
 TOKEN_SLACK = '<your token here>'
