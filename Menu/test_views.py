@@ -8,11 +8,11 @@ class MenuViewTestCase(TestCase):
 
 	def test_menu_count(self):
 		qs = Menu.objects.all()
-		self.assertEqual(qs.count(), 3)
+		self.assertEqual(qs.count(), 0)
 
 	def test_opcion_count(self):
 		qs = Opcion.objects.all()
-		self.assertEqual(qs.count(), 13)
+		self.assertEqual(qs.count(), 0)
 
 	def test_menu_lista_view(self):
 		qs = Menu.objects.all()

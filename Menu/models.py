@@ -112,6 +112,7 @@ def post_menu(instance, *args, **kwargs):
 
 	if instance.enviar == True:
 		opcion = Opcion.objects.filter(menu__id=instance.id)
-		enviar_slack(opcion, instance.id)
+		if opcion.exists():
+			enviar_slack(opcion, instance.id)
 
 post_save.connect(post_menu, sender=Menu)

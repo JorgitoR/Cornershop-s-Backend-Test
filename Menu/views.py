@@ -109,8 +109,8 @@ def add_opciones(request, menu_id):
 		formset = opcionesFormSet(request.POST, instance=menu)
 		if form.is_valid() and formset.is_valid():
 			with transaction.atomic():
-				form.save()
 				formset.save()
+				form.save()
 
 			return redirect('actualizar_menu', menu.id)
 	else:

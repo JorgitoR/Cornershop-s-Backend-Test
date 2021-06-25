@@ -137,6 +137,6 @@ STATIC_URL = '/static/'
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
-TOKEN_SLACK = 'xoxb-2192055643926-2222772015312-iYOMBIvdL4Jago6g5FQ3gTQw'
+TOKEN_SLACK = 'xoxb-2192055643926-2193586085479-EhbSAhMqvACfhv4UzMEhzhng'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'

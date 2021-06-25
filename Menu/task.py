@@ -12,7 +12,7 @@ def enviar_slack(opcion, uuid):
 	for opcion in opcion:
 		opciones.append(str(opcion.item))
 
-	print(opciones)
+
 	opcion_texto = str(opciones)
 
 	url_menu = "http://localhost:8000/menu/%s" % str(uuid)
@@ -20,7 +20,7 @@ def enviar_slack(opcion, uuid):
 	cliente.api_call(
 		'chat.postMessage',
 		json={
-			'channel':'#slack-prueba',
+			'channel':'#menu',
 			'text':"Estimado. \nEl menu de hoy es:" + opcion_texto + "\nurl: " + url_menu + "\nSaludos !!" 
 		}
 	)
