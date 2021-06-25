@@ -13,7 +13,7 @@ Hi There, In this repository I will show you the implementation for the Conrener
 # Specifications
 
 - Celery for async task setup
-- Slack to notify reminder form employer
+- Slack to notify reminder for employes
 - Django to develop the web project
 
 
