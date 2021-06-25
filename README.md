@@ -1,7 +1,7 @@
 # Cornershop's Backend Test
 Hi There, In this repository I will show you the implementation for the Conrenershop's Backend Test.
 
-<a href="">You can watch the video HERE!!</a>
+<a href="https://www.youtube.com/watch?v=UN4rPLz9wQk">You can watch the video HERE!!</a>
 
 # Features
 - The admin can create a menu for a specific date
@@ -26,12 +26,11 @@ The users have different roles, I implemented  <a href="https://github.com/Jorgi
 
 # Chef
 Just The user with this tag <strong>Chef</strong> can create a menu, update the menu, update the options and see what the Cornershop employees have requested.
----Img
+
 
 # Employee
 This user whit this tag <strong>Employee</strong> is be able to choose his preferred meal (until 11 Am CLT) and customizations his order
 
-----Img
 
 
 # Building instructions
