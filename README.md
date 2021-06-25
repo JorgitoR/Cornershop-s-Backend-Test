@@ -1,6 +1,8 @@
 # Cornershop's Backend Test
 Hi There, In this repository I will show you the implementation for the Conrenershop's Backend Test.
 
+<a href="">You can watch the video HERE!!</a>
+
 # Features
 - The admin can create a menu for a specific date
 - Send a Slack reminder with today's menu to all employes
